@@ -24,6 +24,11 @@ Route::get('/login',[LoginController::class , 'index'])->name('login');
 
 
 // Router CMS
+Route::group(['prefix' => 'category' , 'as' => 'category.'], function(){
+    Route::get('/',[CategoryController::class , 'index'])->name('index');
+    Route::post('/store',[CategoryController::class , 'store'])->name('store');
+    Route::get('/delete/{banner}',[CategoryController::class , 'destroy'])->name('destroy');
+});
+
 Route::get('/dashboard',[DashboardController::class , 'index'])->name('dashboard');
-Route::get('/category',[CategoryController::class , 'index'])->name('category');
 Route::get('/news',[NewsController::class , 'index'])->name('news');

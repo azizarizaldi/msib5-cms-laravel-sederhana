@@ -41,7 +41,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('category') ? 'active' : '' }}" href="{{ route('category') }}">
+                    <a class="nav-link {{ request()->routeIs('category.index') ? 'active' : '' }}" href="{{ route('category.index') }}">
                         <i class="nav-icon fas fa-database"></i>
                         <p>
                             Category
