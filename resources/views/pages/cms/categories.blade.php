@@ -1,4 +1,4 @@
-@extends("layouts.app")
+@extends("layouts/cms.app")
 
 @section('main-content')
 <div class="content-wrapper">

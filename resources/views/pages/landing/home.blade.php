@@ -1,4 +1,4 @@
-@extends("landing.app")
+@extends("layouts/landing.app")
 
 @section('main-content')
 <div class="jumbotron text-white">

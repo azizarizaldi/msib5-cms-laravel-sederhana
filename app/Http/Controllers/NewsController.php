@@ -8,6 +8,6 @@ class NewsController extends Controller
 {
     public function index()
     {
-        return view('pages/news');
+        return view('pages/cms/news');
     }
 }

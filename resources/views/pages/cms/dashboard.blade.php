@@ -1,4 +1,4 @@
-@extends("layouts.app")
+@extends("layouts/cms.app")
 
 @section('main-content')
 <div class="content-wrapper">
@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Halaman Berita dan Artikel</h1>
+                    <h1 class="m-0">Halaman Dashboard</h1>
                 </div>
             </div>
         </div>
