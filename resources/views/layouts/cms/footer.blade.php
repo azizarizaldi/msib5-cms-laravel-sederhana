@@ -5,6 +5,7 @@
             </div>
         </footer>
     <!-- ./wrapper -->
+    </div>
 
     <!-- jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
