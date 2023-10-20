@@ -5,7 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\CategoriesController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,8 +18,12 @@ use App\Http\Controllers\CategoriesController;
 |
 */
 
+// Router Landing
 Route::get('/',[HomeController::class , 'index'])->name('home');
 Route::get('/login',[LoginController::class , 'index'])->name('login');
+
+
+// Router CMS
 Route::get('/dashboard',[DashboardController::class , 'index'])->name('dashboard');
-Route::get('/categories',[CategoriesController::class , 'index'])->name('categories');
+Route::get('/category',[CategoryController::class , 'index'])->name('category');
 Route::get('/news',[NewsController::class , 'index'])->name('news');
