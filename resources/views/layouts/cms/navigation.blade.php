@@ -13,10 +13,8 @@
 
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <a href="index3.html" class="brand-link">
-        <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-            style="opacity: .8">
-        <span class="brand-text font-weight-light">AZARDI - CMS</span>
+    <a href="index3.html" class="brand-link text-center">
+        <span class="brand-text font-weight-light">CMS - Portal Berita</span>
     </a>
 
     <!-- Sidebar -->
