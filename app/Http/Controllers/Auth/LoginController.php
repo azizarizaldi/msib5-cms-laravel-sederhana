@@ -26,7 +26,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo = RouteServiceProvider::DASHBOARD;
 
     /**
      * Create a new controller instance.
@@ -40,6 +40,6 @@ class LoginController extends Controller
 
     public function showLoginForm()
     {
-        return view('pages/cms/login');
+        return view('pages.cms.login');
     }    
 }

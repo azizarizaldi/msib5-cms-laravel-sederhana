@@ -24,13 +24,12 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 // Router CMS
 Route::middleware('auth')->group(function() {
+    Route::get('/dashboard',[DashboardController::class , 'index'])->name('dashboard');
+    Route::get('/news',[NewsController::class , 'index'])->name('news');
+        
     Route::group(['prefix' => 'category' , 'as' => 'category.'], function(){
         Route::get('/',[CategoryController::class , 'index'])->name('index');
         Route::post('/store',[CategoryController::class , 'store'])->name('store');
         Route::get('/delete/{banner}',[CategoryController::class , 'destroy'])->name('destroy');
     });
 });
-
-Route::get('/dashboard',[DashboardController::class , 'index'])->name('dashboard');
-Route::get('/news',[NewsController::class , 'index'])->name('news');
-

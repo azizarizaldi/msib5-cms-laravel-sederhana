@@ -3,9 +3,12 @@
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
-            <a class="nav-link" data-toggle="dropdown" href="#">
+            <a class="nav-link" data-toggle="dropdown" href="#" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
                 <i class="fas fa-power-off"></i> Logout
             </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>            
         </li>
     </ul>
 </nav>
@@ -24,7 +27,7 @@
                 <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">Alexander Pierce</a>
+                <a href="#" class="d-block">{{Auth::user()->name}}</a>
             </div>
         </div>
 
